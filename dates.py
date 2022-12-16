@@ -59,6 +59,6 @@ def relative_datetime(date : datetime.datetime, delta_year=0, delta_month=0, del
 
 
 if __name__ =='__main__':
-    print(str(parse_date('2nd march 2025')))
+    print(type(parse_date('2nd march 2025')))
     print(now())
     print(format_datetime_to_str(relative_datetime(now(),delta_year=1)))
