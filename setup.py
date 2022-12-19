@@ -17,6 +17,5 @@ setuptools.setup(
     install_requires=[
         'datetime',
         'python-dateutil',
-        'unittest'
     ],
 )
