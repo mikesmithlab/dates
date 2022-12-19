@@ -16,7 +16,7 @@ setuptools.setup(
     url='https://github.com/MikeSmithLabTeam/dates',
     install_requires=[
         'datetime',
-        'dateutil',
+        'python-dateutil',
         'unittest'
     ],
 )
