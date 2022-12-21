@@ -7,15 +7,17 @@ with open("LICENSE", "r") as fh:
     license = fh.read()
 
 setuptools.setup(
-    name='dates',
+    name='pydates',
     version='0.1',
     license=license,
     packages=setuptools.find_packages(
         exclude=('tests', 'docs')
     ),
-    url='https://github.com/MikeSmithLabTeam/dates',
+    url='https://github.com/MikeSmithLab/pydates',
     install_requires=[
-        'datetime',
         'python-dateutil',
     ],
+    test_suite='nose.collector',
+    tests_require=['nose'],
+    include_package_data=True,
 )
