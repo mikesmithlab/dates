@@ -15,7 +15,8 @@ setuptools.setup(
     ),
     url='https://github.com/MikeSmithLab/dates',
     install_requires=[
-        'datetime',
         'python-dateutil',
     ],
+    test_suite='nose.collector',
+    tests_require=['nose'],
 )
