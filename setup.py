@@ -13,7 +13,7 @@ setuptools.setup(
     packages=setuptools.find_packages(
         exclude=('tests', 'docs')
     ),
-    url='https://github.com/MikeSmithLabTeam/dates',
+    url='https://github.com/MikeSmithLab/dates',
     install_requires=[
         'datetime',
         'python-dateutil',
