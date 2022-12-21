@@ -7,13 +7,13 @@ with open("LICENSE", "r") as fh:
     license = fh.read()
 
 setuptools.setup(
-    name='datespy',
+    name='pydates',
     version='0.1',
     license=license,
     packages=setuptools.find_packages(
         exclude=('tests', 'docs')
     ),
-    url='https://github.com/MikeSmithLab/datespy',
+    url='https://github.com/MikeSmithLab/pydates',
     install_requires=[
         'python-dateutil',
     ],
