@@ -1,6 +1,10 @@
+import sys
+sys.path.append('..')
+import pydates.dates as dates
+
 import unittest
 import datetime
-import dates
+
 
 
 
