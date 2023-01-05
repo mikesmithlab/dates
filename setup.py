@@ -6,13 +6,13 @@ with open("README.md", "r") as fh:
 with open("LICENSE", "r") as fh:
     license = fh.read()
 
+print(setuptools.find_packages())
+
 setuptools.setup(
     name='pydates',
     version='0.1',
     license=license,
-    packages=setuptools.find_packages(
-        exclude=('tests', 'docs')
-    ),
+    packages=['pydates','pydates.pydates'],
     url='https://github.com/MikeSmithLab/pydates',
     install_requires=[
         'python-dateutil',
