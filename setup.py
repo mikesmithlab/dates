@@ -1,24 +1,18 @@
 import setuptools
 
-with open("README.md", "r") as fh:
+with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-
-with open("LICENSE", "r") as fh:
-    license = fh.read()
-
-print(setuptools.find_packages())
 
 setuptools.setup(
     name='pydates',
     version='0.1',
-    license=license,
-    packages=setuptools.find_packages()
-    py_modules=['pydates']
-    url='https://github.com/MikeSmithLab/pydates',
-    install_requires=[
-        'python-dateutil',
-    ],
-    test_suite='nose.collector',
-    tests_require=['nose'],
-    include_package_data=True,
+    author='Mike Smith',
+    author_email='mikesmithlab@gmail.com',
+    description='Testing installation of Package',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url='https://github.com/mikesmithlab/pydates',
+    license='MIT',
+    packages=['pydates'],
+    install_requires=['python-dateutil'],
 )
