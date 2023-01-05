@@ -12,9 +12,7 @@ setuptools.setup(
     name='pydates',
     version='0.1',
     license=license,
-    packages=setuptools.find_packages(
-        exclude=('tests', 'docs')
-    ),
+    py_modules=['pydates']
     url='https://github.com/MikeSmithLab/pydates',
     install_requires=[
         'python-dateutil',
