@@ -57,6 +57,9 @@ def relative_datetime(date : datetime.datetime, delta_year=0, delta_month=0, del
     new_date = date + relativedelta(years=delta_year, months=delta_month, weeks=delta_week, days=delta_day, hours=delta_hour, minutes=delta_minute, seconds=delta_second)
     return new_date
 
+def timestamp(format_str="%Y_%m_%d_%H_%M_%S"):
+    
+    return datetime.datetime.now().strftime(format_str)
 
 if __name__ =='__main__':
     print(type(parse_date('2nd march 2025')))
